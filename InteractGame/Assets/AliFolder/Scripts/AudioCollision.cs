@@ -5,6 +5,7 @@ using UnityEngine;
 public class AudioCollision : MonoBehaviour
 {
     public AudioClip bounceSound; 
+    public AudioClip BumperSound;
     private AudioSource audioSource;
 
     void Start()
@@ -17,6 +18,11 @@ public class AudioCollision : MonoBehaviour
         if (other.gameObject.CompareTag("Bouncer"))
         { 
             audioSource.PlayOneShot(bounceSound);
+        }
+
+        if (other.gameObject.CompareTag("Bumper"))
+        { 
+            audioSource.PlayOneShot(BumperSound);
         }
     }
 }

@@ -7,6 +7,7 @@ TagManager:
   - Ball
   - RespawnCollider
   - Bouncer
+  - Bumper
   layers:
   - Default
   - TransparentFX
