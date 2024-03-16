@@ -10,7 +10,7 @@ public class LaunchForceIndicator : MonoBehaviour
 
     void Update()
     {
-        // Update the slider value based on the current launch force
+        
         launchForceSlider.value = launcher.CurrentLaunchForce / launcher.MaxLaunchForce;
     }
 }
