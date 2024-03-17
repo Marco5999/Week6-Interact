@@ -1781,6 +1781,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &372941530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372941519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b48dae5a7ef5b4c46a8661f1ba54e3f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minX: -0.8
+  maxX: 0.6
+  minY: 0.5
+  maxY: 2
 --- !u!1 &427514155
 GameObject:
   m_ObjectHideFlags: 0
@@ -2765,6 +2781,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &559782706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559782695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b48dae5a7ef5b4c46a8661f1ba54e3f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minX: -1
+  maxX: 0
+  minY: 1.3
+  maxY: 2.8
 --- !u!1 &572217259
 GameObject:
   m_ObjectHideFlags: 0
@@ -4541,6 +4573,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1638193664576923702, guid: 7f39768c08a42a84986a1ca044e3ced1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 559782706}
     - targetCorrespondingSourceObject: {fileID: 1638193664576923702, guid: 7f39768c08a42a84986a1ca044e3ced1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 559782700}
@@ -6504,6 +6539,9 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1638193664576923702, guid: 7f39768c08a42a84986a1ca044e3ced1, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1933058564}
+    - targetCorrespondingSourceObject: {fileID: 1638193664576923702, guid: 7f39768c08a42a84986a1ca044e3ced1, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1933058563}
   m_SourcePrefab: {fileID: 100100000, guid: 7f39768c08a42a84986a1ca044e3ced1, type: 3}
 --- !u!1 &1358527136
@@ -6744,6 +6782,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1638193664576923702, guid: 7f39768c08a42a84986a1ca044e3ced1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2084292809}
     - targetCorrespondingSourceObject: {fileID: 1638193664576923702, guid: 7f39768c08a42a84986a1ca044e3ced1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2084292803}
@@ -7720,6 +7761,9 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1638193664576923702, guid: 7f39768c08a42a84986a1ca044e3ced1, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 372941530}
+    - targetCorrespondingSourceObject: {fileID: 1638193664576923702, guid: 7f39768c08a42a84986a1ca044e3ced1, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 372941524}
   m_SourcePrefab: {fileID: 100100000, guid: 7f39768c08a42a84986a1ca044e3ced1, type: 3}
 --- !u!1 &1818878401
@@ -8694,6 +8738,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1933058564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1933058562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b48dae5a7ef5b4c46a8661f1ba54e3f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minX: -0.3
+  maxX: 0.3
+  minY: -0.3
+  maxY: 0.3
 --- !u!1 &1935064753
 GameObject:
   m_ObjectHideFlags: 0
@@ -9531,6 +9591,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2084292809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084292798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b48dae5a7ef5b4c46a8661f1ba54e3f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minX: 0
+  maxX: 1
+  minY: 1
+  maxY: 3
 --- !u!1 &2090180920
 GameObject:
   m_ObjectHideFlags: 0
