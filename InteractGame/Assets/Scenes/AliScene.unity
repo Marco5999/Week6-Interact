@@ -3712,7 +3712,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3653726955037104236, guid: 2d2fc45d24a885b46bf81bc41290ca03, type: 3}
       propertyPath: activationKey
-      value: 276
+      value: 97
       objectReference: {fileID: 0}
     - target: {fileID: 3653726955037104236, guid: 2d2fc45d24a885b46bf81bc41290ca03, type: 3}
       propertyPath: flipperDamper
@@ -5238,7 +5238,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3653726955037104236, guid: 2d2fc45d24a885b46bf81bc41290ca03, type: 3}
       propertyPath: activationKey
-      value: 275
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3653726955037104236, guid: 2d2fc45d24a885b46bf81bc41290ca03, type: 3}
       propertyPath: flipperDamper
@@ -6318,6 +6318,10 @@ PrefabInstance:
     - target: {fileID: 3861703203786441429, guid: 1400ced1ee312984d8fef21b845ca9e7, type: 3}
       propertyPath: m_Name
       value: ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 5010295355824509984, guid: 1400ced1ee312984d8fef21b845ca9e7, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8539,6 +8543,7 @@ GameObject:
   - component: {fileID: 1514004433}
   - component: {fileID: 1514004435}
   - component: {fileID: 1514004434}
+  - component: {fileID: 1514004436}
   m_Layer: 0
   m_Name: Launcher
   m_TagString: Untagged
@@ -8786,6 +8791,19 @@ MonoBehaviour:
   ballRigidbody: {fileID: 123723171}
   launchForce: 10
   launchSound: {fileID: 8300000, guid: 53cea576cf533f64c83c3327017f446b, type: 3}
+--- !u!114 &1514004436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514004429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0903e7af2ac867c4bbf5f123b3ba4e9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slowdownPercent: 0
 --- !u!1 &1584345347
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,7 +15,7 @@ public class FlipperSound : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
         {
             audioSource.PlayOneShot(flipperSound);
         }

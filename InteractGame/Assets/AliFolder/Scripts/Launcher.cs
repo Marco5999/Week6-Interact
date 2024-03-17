@@ -29,14 +29,14 @@ public class Launcher : MonoBehaviour
         
         if (ballInLauncher)
         {
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKey(KeyCode.LeftShift))
             {
                 
                 currentLaunchForce += chargeRate * Time.deltaTime;
                 currentLaunchForce = Mathf.Clamp(currentLaunchForce, initialLaunchForce, maxLaunchForce);
             }
 
-            if (Input.GetKeyUp(KeyCode.Space))
+            if (Input.GetKeyUp(KeyCode.LeftShift))
             {
                 LaunchBall();
                 currentLaunchForce = initialLaunchForce; 

@@ -19,7 +19,7 @@ public class LauncherSound : MonoBehaviour
     void Update()
     {
         
-        if (ballInLauncher && Input.GetKeyUp(KeyCode.Space))
+        if (ballInLauncher && Input.GetKeyUp(KeyCode.LeftShift))
         {
             LaunchBall();
         }
