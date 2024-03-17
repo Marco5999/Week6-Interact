@@ -8,8 +8,8 @@ public class BumperShake : MonoBehaviour
     public float shakeDuration = 0.1f;
     public float shakeMagnitude = 0.1f;
 
-    private Vector3 originalPosition;
-    private Vector3 currentPosition; // Store the current position of the bumper
+    public Vector3 originalPosition;
+    public Vector3 currentPosition; // Store the current position of the bumper
 
     void Start()
     {
@@ -49,8 +49,8 @@ public class BumperShake : MonoBehaviour
     }
 
     // Update the current position of the bumper when it's moved
-    void LateUpdate()
-    {
-        currentPosition = transform.position;
-    }
+    //void LateUpdate()
+    //{
+        // = transform.position;
+    //}
 }

@@ -13,6 +13,13 @@ public class BouncerDrag : MonoBehaviour
     public float minY = -5f;
     public float maxY = 5f;
 
+    BumperShake shake;
+
+    private void Start()
+    {
+        shake = GetComponent<BumperShake>();
+    }
+
     void OnMouseDown()
     {
         offset = gameObject.transform.position - GetMouseWorldPosition();
@@ -28,12 +35,14 @@ public class BouncerDrag : MonoBehaviour
             float clampedX = Mathf.Clamp(newPosition.x, minX, maxX);
             float clampedY = Mathf.Clamp(newPosition.y, minY, maxY);
             transform.position = new Vector3(clampedX, clampedY, transform.position.z);
+            
         }
     }
 
     void OnMouseUp()
     {
         isDragging = false;
+        shake.currentPosition = transform.position;
     }
 
     private Vector3 GetMouseWorldPosition()
