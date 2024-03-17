@@ -3102,6 +3102,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8351917552511609523, guid: 925fc5468deed104fb9fc845c583ec7b, type: 3}
+      propertyPath: shakeMagnitude
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 892647528963423521, guid: 925fc5468deed104fb9fc845c583ec7b, type: 3}
       propertyPath: forceStrength
       value: 500

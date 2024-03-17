@@ -5,6 +5,12 @@ using UnityEngine;
 public class Slingshot : MonoBehaviour
 {
     public float forceStrength;
+    SlingshotShake shake;
+
+    private void Start()
+    {
+        shake = GetComponentInParent<SlingshotShake>();
+    }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -17,6 +23,13 @@ public class Slingshot : MonoBehaviour
             
             Rigidbody2D ballRigidbody = collision.gameObject.GetComponent<Rigidbody2D>();
             ballRigidbody.AddForce(direction * forceStrength);
+
+            if (shake != null)
+            {
+                shake.StartShake();
+            }
+
+            
         }
     }
 }
