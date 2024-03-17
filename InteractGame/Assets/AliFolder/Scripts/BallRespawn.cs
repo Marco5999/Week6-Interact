@@ -5,6 +5,14 @@ using UnityEngine;
 public class BallRespawn : MonoBehaviour
 {
     public Transform respawnPoint;
+    public GameObject trigger;
+    ExitTrigger exitTrigger;
+
+
+    private void Start()
+    {
+        exitTrigger = trigger.GetComponent<ExitTrigger>();
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -12,6 +20,7 @@ public class BallRespawn : MonoBehaviour
         if (other.CompareTag("RespawnCollider"))
         {
             RespawnBall();
+            exitTrigger.ResetTrigger();
         }
     }
 

@@ -12,12 +12,16 @@ public class Launcher : MonoBehaviour
     private float currentLaunchForce;
     private bool ballInLauncher = false;
 
+    public GameObject trigger;
+    ExitTrigger exitTrigger;
+
     public float CurrentLaunchForce => currentLaunchForce;
     public float MaxLaunchForce => maxLaunchForce;
 
     void Start()
     {
         currentLaunchForce = initialLaunchForce;
+        exitTrigger = trigger.GetComponent<ExitTrigger>();
     }
 
     void Update()
@@ -53,6 +57,7 @@ public class Launcher : MonoBehaviour
         {
             
             ballInLauncher = true;
+            exitTrigger.ResetTrigger();
         }
     }
 
@@ -63,6 +68,7 @@ public class Launcher : MonoBehaviour
         {
             
             ballInLauncher = false;
+            
         }
     }
 }
