@@ -7,7 +7,7 @@ public class BallRespawn : MonoBehaviour
     public Transform respawnPoint;
     public GameObject trigger;
     ExitTrigger exitTrigger;
-
+    public GameObject scoreManager;
 
     private void Start()
     {
@@ -31,5 +31,8 @@ public class BallRespawn : MonoBehaviour
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         rb.velocity = Vector2.zero;
         rb.angularVelocity = 0f;
+        ScoreManager score = scoreManager.GetComponent<ScoreManager>();
+        score.score = 0;
+        score.UpdateScoreText();
     }
 }

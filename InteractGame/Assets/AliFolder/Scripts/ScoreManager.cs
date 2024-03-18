@@ -7,14 +7,14 @@ using TMPro;
 public class ScoreManager : MonoBehaviour
 {
     public TextMeshProUGUI scoreText; 
-    private int score = 0;
+    public int score = 0;
 
     void Start()
     {
         UpdateScoreText();
     }
 
-    void UpdateScoreText()
+    public void UpdateScoreText()
     {
         scoreText.text = "Score: " + score;
     }
