@@ -8,6 +8,8 @@ TagManager:
   - RespawnCollider
   - Bouncer
   - Bumper
+  - WallBumper
+  - Diamond
   layers:
   - Default
   - TransparentFX
