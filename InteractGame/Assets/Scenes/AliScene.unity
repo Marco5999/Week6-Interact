@@ -415,6 +415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 1449809122}
   trigger: {fileID: 2040036130}
+  scoreManager: {fileID: 779189468}
 --- !u!114 &123723175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4454,6 +4455,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1902446308}
+  score: 0
 --- !u!4 &779189470
 Transform:
   m_ObjectHideFlags: 0
@@ -9402,7 +9404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0903e7af2ac867c4bbf5f123b3ba4e9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slowdownPercent: 0
+  slowdownPercent: 15
 --- !u!1 &1584345347
 GameObject:
   m_ObjectHideFlags: 0

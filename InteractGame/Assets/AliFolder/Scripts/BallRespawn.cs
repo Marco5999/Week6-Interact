@@ -32,7 +32,11 @@ public class BallRespawn : MonoBehaviour
         rb.velocity = Vector2.zero;
         rb.angularVelocity = 0f;
         ScoreManager score = scoreManager.GetComponent<ScoreManager>();
-        score.score = 0;
-        score.UpdateScoreText();
+        if (score != null )
+        {
+            score.score = 0;
+            score.UpdateScoreText();
+        }
+        
     }
 }
